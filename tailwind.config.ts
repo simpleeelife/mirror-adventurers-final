@@ -17,9 +17,9 @@ const config: Config = {
         'text-sub': '#888888',
       },
       fontFamily: {
-        orbitron: ['Orbitron', 'sans-serif'],
-        teko: ['Teko', 'sans-serif'],
-        dotgothic: ['DotGothic16', 'sans-serif'],
+        orbitron: ['var(--font-orbitron)', 'sans-serif'],
+        teko: ['var(--font-teko)', 'sans-serif'],
+        dotgothic: ['var(--font-dotgothic)', 'sans-serif'],
       },
     },
   },

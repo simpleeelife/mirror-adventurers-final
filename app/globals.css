@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary-bg text-text-base font-teko;
+  @apply bg-primary-bg text-text-base;
+  font-family: var(--font-teko), sans-serif;
 }
 
 .star-field {
