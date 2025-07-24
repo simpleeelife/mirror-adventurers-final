@@ -23,7 +23,16 @@ interface CharacterStory {
   characterId: { current: string };
   specialPage?: {
     catchphrase?: string;
-    story?: any[];
+    story?: Array<{
+      _type: string;
+      _key: string;
+      children?: Array<{
+        _type: string;
+        _key: string;
+        text: string;
+        marks?: string[];
+      }>;
+    }>;
     creativeLinks?: Array<{
       title: string;
       url: string;
@@ -57,7 +66,7 @@ export default async function CharacterStoryPage({ params }: { params: { charact
         <div className="relative z-10">
           {character.specialPage.catchphrase && (
             <p className="font-teko text-2xl text-accent-main mb-2">
-              "{character.specialPage.catchphrase}"
+              &ldquo;{character.specialPage.catchphrase}&rdquo;
             </p>
           )}
           <h1 className="font-orbitron text-6xl font-bold text-white tracking-widest">
