@@ -45,8 +45,8 @@ export default function RootLayout({
             
             {/* ナビゲーション */}
             <nav className="flex items-center gap-8">
-              <a href="#characters" className="text-2xl text-text-base hover:text-accent-main transition-colors">
-                Characters
+              <a href="/portal" className="text-2xl text-text-base hover:text-accent-main transition-colors">
+                The Portal
               </a>
               <a href="#about" className="text-2xl text-text-base hover:text-accent-main transition-colors">
                 About

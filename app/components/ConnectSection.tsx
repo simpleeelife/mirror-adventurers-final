@@ -14,7 +14,7 @@ export function ConnectSection() {
         <div className="mt-8 flex justify-center">
           <a
             href="#"
-            className="inline-block px-10 py-4 bg-gradient-to-r from-accent-sub to-accent-main text-primary-bg rounded-full font-orbitron font-bold text-lg hover:scale-105 transition-transform duration-300"
+            className="inline-block px-10 py-4 bg-gradient-to-r from-accent-sub to-accent-main text-primary-bg rounded-full font-orbitron font-bold text-lg hover:scale-105 hover:shadow-lg hover:shadow-accent-main/30 transition-all duration-300"
           >
             無料で登録
           </a>

@@ -2,19 +2,21 @@ export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center space-y-8 max-w-4xl">
-        <h1 className="font-orbitron text-6xl md:text-8xl font-bold bg-gradient-to-r from-accent-sub to-accent-main bg-clip-text text-transparent leading-tight">
-          Adventurers in the Mirror
+        <h1 className="font-orbitron text-5xl md:text-7xl font-bold leading-tight 
+                   bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent 
+                   drop-shadow-[0_0_15px_rgba(72,187,255,0.5)]">
+          あなたの人生が<br />永遠の物語になる
         </h1>
-        <p className="font-dotgothic text-3xl md:text-4xl text-text-base">
-          あなたの人生が永遠の物語になる
+
+        <p className="font-orbitron text-3xl md:text-4xl font-bold bg-gradient-to-r from-accent-sub to-accent-main bg-clip-text text-transparent">
+          Adventurers in the Mirror
         </p>
-        <p className="font-teko text-2xl md:text-3xl text-text-sub">
+
+        <p className="font-dotgothic text-xl text-text-sub">
           鏡の向こうにいるもうひとりのあなた
         </p>
-        <a
-          href="#about"
-          className="inline-block px-10 py-4 bg-gradient-to-r from-accent-sub to-accent-main text-primary-bg rounded-full font-orbitron font-bold text-lg hover:scale-105 hover:shadow-lg hover:shadow-accent-main/30 transition-all duration-300"
-        >
+
+        <a href="/portal" className="inline-block px-10 py-4 bg-gradient-to-r from-accent-sub to-accent-main text-primary-bg rounded-full font-orbitron font-bold text-lg hover:scale-105 hover:shadow-lg hover:shadow-accent-main/30 transition-all duration-300">
           冒険を始める
         </a>
       </div>

@@ -52,6 +52,12 @@ export default async function HomePage() {
             </Link>
           ))}
         </div>
+        
+        <div className="text-center mt-12">
+          <Link href="/portal" className="inline-block px-10 py-4 bg-gradient-to-r from-accent-sub to-accent-main text-primary-bg rounded-full font-orbitron font-bold text-lg hover:scale-105 hover:shadow-lg hover:shadow-accent-main/30 transition-all duration-300">
+            冒険者の酒場へ行く
+          </Link>
+        </div>
       </section>
       
       <ConnectSection />

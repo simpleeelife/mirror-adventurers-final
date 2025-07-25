@@ -100,9 +100,64 @@ export default defineType({
       title: 'Special Page Details',
       type: 'object',
       fields: [
-        {name: 'catchphrase', type: 'string', title: 'Catchphrase'},
-        {name: 'story', type: 'array', title: 'Story', of: [{type: 'block'}]},
-        {name: 'creativeLinks', type: 'array', title: 'Creative Links', of: [{type: 'externalLink'}]},
+        defineField({
+          name: 'storyPageHeroImage',
+          title: 'Story Page Hero Image',
+          type: 'image',
+          options: { hotspot: true },
+        }),
+        defineField({
+          name: 'catchphrase',
+          title: 'キャッチフレーズ (Catchphrase)',
+          type: 'text', // stringからtextに変更し、改行を可能に
+          rows: 3,
+        }),
+        defineField({
+          name: 'heroSubtitle',
+          title: 'ヒーローセクションのサブタイトル',
+          type: 'text', // こちらも改行可能なtextタイプ
+          rows: 2,
+        }),
+        defineField({
+          name: 'pastStory',
+          title: '過去の物語 (Past Story)',
+          type: 'object',
+          fields: [
+            { name: 'subtitle', title: 'キャッチフレーズ', type: 'string' },
+            { name: 'content', title: '物語本文', type: 'array', of: [{type: 'block'}] }
+          ]
+        }),
+        defineField({
+          name: 'creativeLinks',
+          title: '創作物ポートフォリオ (Portfolio Links)',
+          type: 'array', 
+          of: [{type: 'externalLink'}]
+        }),
+        defineField({
+          name: 'assetGallery',
+          title: '二次創作アセット (Asset Gallery)',
+          type: 'array',
+          of: [{
+            type: 'image',
+            options: { hotspot: true },
+            fields: [
+              {
+                name: 'caption',
+                type: 'string',
+                title: 'キャプション (Caption)',
+              }
+            ]
+          }]
+        }),
+        defineField({
+          name: 'futureMemory',
+          title: '未来の記憶 (Future Memory)',
+          type: 'object',
+          fields: [
+            { name: 'subtitle', title: 'キャッチフレーズ', type: 'string' },
+            { name: 'content', title: '物語本文', type: 'array', of: [{type: 'block'}] }
+          ]
+        }),
       ],
     }),
   ],

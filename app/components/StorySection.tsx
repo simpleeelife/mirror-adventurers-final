@@ -17,7 +17,7 @@ const concepts: ConceptCard[] = [
   },
   {
     icon: "🔗",
-    title: "縁起 - 創作の連鎖",
+    title: "創作の連鎖",
     description: "魂と魂が創作を通じて直接響き合い、新たなインスピレーションの連鎖が生まれる。私たちは、そんな全ての事象が繋がり合う、新しい創作エコシステムの実現を目指します。"
   }
 ];
@@ -36,7 +36,7 @@ export function StorySection() {
       
       <div className="text-center mb-16 max-w-3xl mx-auto">
         <div className="text-center text-lg md:text-xl leading-relaxed space-y-4 font-teko">
-          <p className="text-2xl md:text-3xl text-accent-main font-bold">
+          <p>
             いつからだろう<br />
             誰かが決めた「幸せ」の形に<br />
             自分を押し込めるようになったのは
@@ -76,6 +76,12 @@ export function StorySection() {
             </p>
           </div>
         ))}
+      </div>
+      
+      <div className="text-center mt-12">
+        <a href="#" className="inline-block px-10 py-4 bg-gradient-to-r from-accent-sub to-accent-main text-primary-bg rounded-full font-orbitron font-bold text-lg hover:scale-105 hover:shadow-lg hover:shadow-accent-main/30 transition-all duration-300">
+          詳しく知る
+        </a>
       </div>
     </section>
   );
