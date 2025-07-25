@@ -73,7 +73,7 @@ export default async function CharacterStoryPage({ params }: { params: { charact
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="font-orbitron text-4xl font-bold bg-gradient-to-r from-accent-sub to-accent-main bg-clip-text text-transparent mb-12">The Echo</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {specialPage.creativeLinks.map((item: any) => (
+              {specialPage.creativeLinks.map((item: { _key: string; url: string; title: string }) => (
                 <a key={item._key} href={item.url} target="_blank" rel="noopener noreferrer" className="block p-8 bg-secondary-bg/50 border border-accent-main/20 rounded-lg text-accent-main hover:bg-secondary-bg transition-colors font-orbitron text-2xl">
                   {item.title}
                 </a>
@@ -89,7 +89,7 @@ export default async function CharacterStoryPage({ params }: { params: { charact
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="font-orbitron text-4xl font-bold bg-gradient-to-r from-accent-sub to-accent-main bg-clip-text text-transparent mb-12">The Fragment</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {specialPage.assetGallery.map((asset: any) => (
+              {specialPage.assetGallery.map((asset: { _key: string; url: string; caption?: string }) => (
                 <div key={asset._key}>
                   <img src={asset.url} alt={asset.caption || 'Asset'} className="w-full rounded-lg border-2 border-accent-main/30" />
                   <p className="text-center mt-2 font-teko text-lg">{asset.caption}</p>

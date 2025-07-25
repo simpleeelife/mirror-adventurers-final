@@ -13,12 +13,12 @@ interface Character {
   name: string;
   class: string;
   heroImageUrl?: string;
-  archetype: { name: string; description: any };
+  archetype: { name: string; description: Array<{ _type: string; children: Array<{ text: string }> }> };
   stats: { hp: number; attack: number; magic: number; defense: number; speed: number; strategy: number };
-  skill: { name: string; description: any };
-  personality: any;
-  backgroundStory: any;
-  evolutionPath: any;
+  skill: { name: string; description: Array<{ _type: string; children: Array<{ text: string }> }> };
+  personality: Array<{ _type: string; children: Array<{ text: string }> }>;
+  backgroundStory: Array<{ _type: string; children: Array<{ text: string }> }>;
+  evolutionPath: Array<{ _type: string; children: Array<{ text: string }> }>;
   characterId: string;
 }
 
