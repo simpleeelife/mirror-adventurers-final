@@ -42,7 +42,7 @@ export default async function CharacterStoryPage({ params }: { params: { charact
       <section className="h-screen flex flex-col items-center justify-center relative text-center bg-cover bg-center" style={{backgroundImage: `url(${specialPage.heroImageUrl || 'https://placehold.co/1920x1080/0a0a0f/1a1a2e'})`}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
-          <h1 className="font-orbitron text-5xl md:text-7xl font-bold text-white drop-shadow-[0_0_15px_rgba(72,187,255,0.7)] whitespace-pre-wrap">
+          <h1 className="font-orbitron text-4xl sm:text-5xl md:text-7xl font-bold text-white drop-shadow-[0_0_15px_rgba(72,187,255,0.7)] whitespace-pre-wrap">
             {specialPage.catchphrase}
           </h1>
           {specialPage.heroSubtitle && (

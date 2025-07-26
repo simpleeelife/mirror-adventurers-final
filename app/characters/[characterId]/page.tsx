@@ -42,7 +42,7 @@ export default async function CharacterPage({ params }: { params: { characterId:
   const nextSlug = currentIndex < allSlugs.length - 1 ? allSlugs[currentIndex + 1].slug : null;
 
   return (
-    <main className="min-h-screen px-4 py-16 flex items-center justify-center">
+    <main className="min-h-screen px-4 py-16 pt-24 flex items-center justify-center">
       <CharacterDetailLayout 
         character={character}
         prevSlug={prevSlug}

@@ -40,7 +40,7 @@ export default async function PortalPage() {
 
 
   return (
-    <main className="min-h-screen px-4 py-16">
+    <main className="min-h-screen px-4 py-16 pt-24">
       <div className="max-w-screen-lg mx-auto">
         {/* ページタイトル */}
         <div className="text-center mb-8">
