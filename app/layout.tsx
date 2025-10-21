@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Orbitron, Teko, DotGothic16 } from "next/font/google";
+import { FluidBackground } from "@/app/components/FluidBackground";
 import "./globals.css";
 import Header from "@/app/components/Header";
 
@@ -33,8 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${orbitron.variable} ${teko.variable} ${dotGothic16.variable}`}>
-        <div className="star-field" />
+      <body className={`${orbitron.variable} ${teko.variable} ${dotGothic16.variable} bg-primary-bg text-text-base`}>
+        <FluidBackground />
+        <div className="fluid-overlay" aria-hidden="true" />
         <Header />
         {children}
 

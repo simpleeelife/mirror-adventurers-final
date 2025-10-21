@@ -2,10 +2,9 @@ export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center space-y-8 max-w-4xl">
-        <h1 className="font-orbitron text-4xl sm:text-5xl md:text-7xl font-bold leading-tight 
-                   bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent 
-                   drop-shadow-[0_0_15px_rgba(72,187,255,0.5)]">
-          あなたの人生が<br />永遠の物語になる
+        <h1 className="font-orbitron text-3xl sm:text-4xl md:text-6xl font-bold leading-relaxed                    bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent                    drop-shadow-[0_0_15px_rgba(72,187,255,0.5)]">
+          <span className="block">あなたの人生が</span>
+          <span className="block mt-4 sm:mt-6">永遠の物語になる</span>
         </h1>
 
         <div className="font-orbitron text-3xl md:text-4xl font-bold text-center">

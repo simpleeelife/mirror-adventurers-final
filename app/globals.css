@@ -6,12 +6,33 @@
 body {
   @apply bg-primary-bg text-text-base;
   font-family: var(--font-teko), sans-serif;
+  background-color: #03040b;
+  overflow-x: hidden;
 }
 
-.star-field {
-  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px), radial-gradient(circle at 75% 75%, white 1px, transparent 1px);
-  background-size: 100px 100px, 150px 150px;
-  background-position: 0 0, 50px 50px;
-  opacity: 0.2; pointer-events: none; z-index: -1;
+
+
+.fluid-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  z-index: -20;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.fluid-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.08), transparent 55%),
+    radial-gradient(circle at 80% 30%, rgba(255, 0, 180, 0.06), transparent 65%),
+    linear-gradient(180deg, rgba(5, 7, 25, 0.65), rgba(3, 6, 19, 0.92));
+  mix-blend-mode: screen;
+  opacity: 0.45;
+  filter: saturate(105%);
 }
