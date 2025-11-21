@@ -23,8 +23,31 @@ const dotGothic16 = DotGothic16({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mirror-adventurers.com"),
   title: "鏡の中の冒険者たち",
-  description: "安定バージョン",
+  description: "リアルとバーチャルが溶け合う縁起の世界。あなたの魂が新たな冒険を始める場所。",
+  openGraph: {
+    title: "鏡の中の冒険者たち",
+    description: "リアルとバーチャルが溶け合う縁起の世界。あなたの魂が新たな冒険を始める場所。",
+    url: "https://mirror-adventurers.com",
+    siteName: "鏡の中の冒険者たち",
+    images: [
+      {
+        url: "/image/OGP.png",
+        width: 1200,
+        height: 630,
+        alt: "鏡の中の冒険者たち",
+      },
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "鏡の中の冒険者たち",
+    description: "リアルとバーチャルが溶け合う縁起の世界。あなたの魂が新たな冒険を始める場所。",
+    images: ["/image/OGP.png"],
+  },
 };
 
 export default function RootLayout({

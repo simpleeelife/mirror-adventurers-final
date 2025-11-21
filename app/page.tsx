@@ -1,6 +1,5 @@
 import { HeroSection } from '@/app/components/HeroSection';
 import { AboutSection } from '@/app/components/AboutSection';
-import { StorySection } from '@/app/components/StorySection';
 import { ConnectSection } from '@/app/components/ConnectSection';
 import { client } from '@/lib/sanity.client';
 import { groq } from 'next-sanity';
@@ -29,7 +28,6 @@ export default async function HomePage() {
     <>
       <HeroSection />
       <AboutSection />
-      <StorySection />
       
       {/* Featured Charactersセクション */}
       <section id="characters" className="max-w-7xl mx-auto px-4 py-24">
